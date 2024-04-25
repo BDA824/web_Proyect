@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import { Formulario } from './Components/Formulario';
-import { Registro } from './Components/Registro';
+import { Formulario } from './components/Formulario';
+import { Registro } from './components/Registro';
 import './App.css';
 
 function App() {
-  const [view, setView] = useState('login');
+ const [view, setView] = useState('login');
 
-  return (
+ return (
       <div className="app-container">
         {view === 'login' && <Formulario changeView={setView} />}
         {view === 'registro' && <Registro changeView={setView} />}
       </div>
-  );
-  }
+ );
+}
 
 export default App;
