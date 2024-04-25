@@ -1,9 +1,21 @@
+/* index.css */
+
 body {
-    background-color: black;
+    background-color: #1E1E1E; /* Fondo oscuro, pero no tan oscuro como el negro puro */
     position: relative;
     height: 100vh;
     margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Times New Roman', sans-serif; /* Fuente legible y moderna */
+    color: #ffffff; /* Texto blanco para mejorar la legibilidad */
+}
+
+.app-container {
+    width: 100%;
+    max-width: 600px; /* Ajusta el ancho máximo para mantener el diseño responsivo */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }

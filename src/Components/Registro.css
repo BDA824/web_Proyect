@@ -5,34 +5,60 @@
     align-items: center;
     gap: 1rem;
     width: 400px;
-    border-radius: 5px;
-    background-color: #1b1b1b;
-    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #282828; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 .Registro h1 {
-    font-size: 3em; /* Tamaño de fuente más grande para el título */
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    font-family: 'Times New Roman', sans-serif;
 }
 
-.Registro input {
+.input-group {
+    position: relative;
+    margin-bottom: 0.5em;
+}
+
+.input-group input {
     padding: 10px;
     border-radius: 10px;
     border: 1px solid #ccc;
+    background-color: #282828;
+    color: #ffffff;
+    width: 100%;
 }
 
-.Registro button {
-    padding: 10px;
+.error-message {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: red;
+    font-size: 10px;
+    background-color: #282828;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
     border-radius: 5px;
     border: none;
-    background-color: #007bff;
-    color: #fff;
     cursor: pointer;
+    user-select: none; 
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
-.Registro button:hover {
+.button-link:hover {
     background-color: #0056b3;
-}
-
-.Formulario {
-    padding: 0%;
 }

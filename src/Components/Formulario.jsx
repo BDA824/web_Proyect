@@ -14,12 +14,13 @@ export function Formulario({changeView}){
 
         if(nombre === "" || contraseña === ""){
             setError(true)
-            return
+            return;
         }
 
         setError(false)
 
         setUser([nombre])
+
     }
 
     return(
