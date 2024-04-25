@@ -1,9 +1,10 @@
 import "./App.css";
+import { Registro } from "../components/Registro"; 
 
 export default function App() {
   return (
     <div className="App">
-      <h1>Muchachos vamos a darle duro a este proyecto</h1>
+      <Registro />
     </div>
   );
 }
