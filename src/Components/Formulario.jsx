@@ -1,6 +1,7 @@
 export default Formulario;
 import "./Formulario.css"
 import { useState } from "react"
+import { Link } from "react-router-dom";
 
 export function Formulario({changeView}){
     const [nombre, setNombre] = useState("")
@@ -31,7 +32,10 @@ export function Formulario({changeView}){
                 <button>Iniciar Sesion</button>
             </form>
             {error && <p>Todos los campos son obligatorios</p> }
-            <button onClick={() => changeView('registro')}>Si no estás registrado, Regístrate</button>
+            <span>Si no estás registrado, 
+                <span className="link-registro">
+                    <Link to="/create-account">Registrate</Link>
+                </span></span>
         </section>
     )
 }
