@@ -1,10 +1,17 @@
-import "./App.css";
-import { Registro } from "../components/Registro"; 
+import React, { useState } from 'react';
+import { Formulario } from './Components/Formulario';
+import { Registro } from './Components/Registro';
+import './App.css';
 
-export default function App() {
+function App() {
+  const [view, setView] = useState('login');
+
   return (
-    <div className="App">
-      <Registro />
-    </div>
+      <div className="app-container">
+        {view === 'login' && <Formulario changeView={setView} />}
+        {view === 'registro' && <Registro changeView={setView} />}
+      </div>
   );
-}
+  }
+
+export default App;
