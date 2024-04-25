@@ -5,17 +5,11 @@
     align-items: center;
     gap: 1rem;
     width: 400px;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 16px;
+    border-radius: 10px;
     background-color: #1b1b1b; /* Fondo blanco para el formulario */
     color: #ffffff; /* Texto negro */
 }
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
 
 .Formulario h1 {
     font-size: 3em; /* Tamaño de fuente más grande para el título */

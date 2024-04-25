@@ -29,7 +29,7 @@ export function Registro({ changeView }) {
     return (
         <section className="Registro">
             <h1>Registro</h1>
-            <form className="formulario" onSubmit={handleSubmit}>
+            <form className="Formulario" onSubmit={handleSubmit}>
                 <input type="text" value={nombre} onChange={e => setNombre(e.target.value)} placeholder="Ingrese un nombre" />
                 <input type="password" value={contraseña} onChange={e => setContraseña(e.target.value)} placeholder="Ingrese una contraseña"/>
                 <input type="password" value={confirmarContraseña} onChange={e => setConfirmarContraseña(e.target.value)} placeholder="Confirme su contraseña" />

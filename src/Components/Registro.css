@@ -5,7 +5,6 @@
     align-items: center;
     gap: 1rem;
     width: 400px;
-    padding: 5px;
     border-radius: 5px;
     background-color: #1b1b1b;
     color: #ffffff;
@@ -32,4 +31,8 @@
 
 .Registro button:hover {
     background-color: #0056b3;
+}
+
+.Formulario {
+    padding: 0%;
 }
